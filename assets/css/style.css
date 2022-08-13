@@ -1,0 +1,33 @@
+body {
+  background-image: url(/assets/images/money.gif);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.name {
+  color: #2b385b;
+}
+
+.name-2 {
+  color: #e16e0e;
+}
+
+.button {
+  height: 30px;
+  width: 400px;
+}
