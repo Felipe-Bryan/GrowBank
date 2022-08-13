@@ -1,6 +1,6 @@
 let saldo = 0,
-  saque = 0,
-  dep = 0,
+  saque,
+  dep,
   transf,
   chequeEsp = 500,
   limiteSaque,
@@ -23,7 +23,7 @@ function deposito() {
 function sacar() {
   limiteSaque = chequeEsp + saldo - taxaSaque;
   saque = Number(
-    prompt(`Será cobrada uma taxa de ${taxaSaque.toFixed(2)} pelo serviço
+    prompt(`Será cobrada uma taxa de GC$ ${taxaSaque.toFixed(2)} pelo serviço
     Você possui um limite de cheque especial de ${chequeEsp.toFixed(2)}
     Seu limite para saque é de GC$: ${limiteSaque.toFixed(2)} (Saldo + cheque especial)    
     Informe o valor a ser sacado ou pressione "Enter" para retornar`)
@@ -43,7 +43,7 @@ function transferir() {
   limiteTransf = saldo - taxaTransf;
   transf = Number(
     prompt(`Seu limite para transferências é de GC$: ${limiteTransf.toFixed(2)}
-  Será cobrada uma taxa de ${taxaTransf.toFixed(2)} pelo serviço
+  Será cobrada uma taxa de GC$ ${taxaTransf.toFixed(2)} pelo serviço
   Informe o valor a ser transferido ou pressione "Enter" para retornar`)
   );
   if (transf > 0) {
