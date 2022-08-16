@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <div class="parent">
-      <div class="title">
-        <h1 class="name">Grow<span class="name-2">Bank</span></h1>
-      </div>
-      <div class="button-box">
-        <button onclick="abrirSistema()" class="button">Iniciar sistema</button>
-      </div>
-    </div>
-
+    <header class="header">
+      <nav class="navBar">
+        <div class="title">
+          <div><span class="name">Grow</span><span class="name-2">Bank</span></div>
+          <div class="saldo">
+            <img class="coins" src="/assets/images/coins-small.png" alt="" />
+            <span class="saldo" id="saldo"></span>
+          </div>
+        </div>
+        <div class="menu">
+          <button class="button-menu" onclick="depositMenu()">Depósito</button>
+          <button class="button-menu" onclick="withdrawMenu()">Saque</button>
+          <button class="button-menu" onclick="transferMenu()">Transferência</button>
+          <button class="button-menu" onclick="sair()">Sair</button>
+        </div>
+      </nav>
+      <hr />
+    </header>
+    <div class="parent" id="parent"></div>
     <script src="/assets/js/index.js"></script>
   </body>
 </html>

@@ -1,25 +1,27 @@
 body {
+  margin: 0px;
+  height: 100vh;
   background-image: url(/assets/images/money.gif);
   background-size: cover;
-  height: 100vh;
+}
+
+header {
+  background-color: white;
+  margin: 0px;
+}
+
+/*NavBar*/
+
+.navBar {
+  height: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 60px;
 }
 
 .name {
+  margin-left: 10px;
   color: #2b385b;
 }
 
@@ -27,7 +29,116 @@ h1 {
   color: #e16e0e;
 }
 
+.menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-menu {
+  width: 150px;
+  height: 30px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.saldo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coins {
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+/*Body*/
+
+p {
+  margin: 2px;
+  padding: 0px;
+}
+
+h3 {
+  margin: 2px;
+  padding: 0px;
+}
+
+.parent {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   height: 30px;
   width: 400px;
+}
+
+.coins-small {
+  height: 40px;
+  width: 40px;
+}
+
+.depMenu {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.valueInput {
+  width: 250px;
+  height: 18px;
+}
+
+.btnSubmit {
+  height: 25px;
+  width: 100px;
+}
+
+.btnCancel {
+  height: 25px;
+  width: 100px;
+}
+
+.withdrawMenu {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+}
+
+.transferMenu {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 500px;
 }
