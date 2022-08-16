@@ -9,7 +9,6 @@ let saldo = 0,
   destinyAcc;
 const taxaSaque = 2.5,
   taxaTransf = 4.5;
-let opcao;
 
 window.onload = function () {
   document.getElementById('saldo').innerHTML = ` GC$ ${saldo.toFixed(2)}`;
