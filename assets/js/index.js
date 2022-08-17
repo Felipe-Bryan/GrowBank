@@ -11,9 +11,7 @@ const taxaSaque = 2.5,
   taxaTransf = 4.5;
 let opcao;
 
-window.onload = function () {
-  document.getElementById('saldo').innerHTML = ` GC$ ${saldo.toFixed(2)}`;
-};
+atualizarSaldo();
 
 function atualizarSaldo() {
   document.getElementById('saldo').innerHTML = ` GC$ ${saldo.toFixed(2)}`;
@@ -75,7 +73,7 @@ function withdrawMenu() {
 }
 
 function withdraw() {
-  limiteSaque = saldo - taxaSaque;
+  limiteSaque = saldo + chequeEsp - taxaSaque;
   saque = parseFloat(document.getElementById('value').value);
   if (saque > 0) {
     if (saque > limiteSaque) {
@@ -91,7 +89,7 @@ function withdraw() {
 }
 
 function transferMenu() {
-  limiteTransf = chequeEsp + saldo - taxaSaque;
+  limiteTransf = saldo - taxaSaque;
   document.getElementById('parent').innerHTML = `
   <div class="transferMenu" id="content">
   <h2>Transferência</h2>
